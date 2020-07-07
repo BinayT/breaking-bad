@@ -6,7 +6,7 @@ const CharacterGrid = ({ items, isLoading }) => {
     <h1>Loading...</h1>
   ) : (
     <section className="cards">
-      {items.map((el, k) => (
+      {items.map((el) => (
         <CharaterItem key={el.char_id} el={el} />
       ))}
     </section>
